@@ -25,15 +25,20 @@
         <span class="background"></span>
         <!-- results nav -->
         <span class="navigation-items" id="resultsNav">
-          <h3 class="clickable">Favorites</h3>
+          <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
           <h3>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;&nbsp;&nbsp;</h3>
-          <h3 class="clickable">Load More</h3>
+          <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
         </span>
         <!-- favorites Nav -->
         <span class="navigation-items hidden" id="favoritesNav">
-          <h3 class="clickable">Load More Nasa Images</h3>
+          <h3 class="clickable" onclick="getNasaPictures()">Load More Nasa Images</h3>
         </span>
       </div>
+      <!-- Images container -->
+      <div class="images-container"></div>
+    <!-- Save confirmation -->
+    <div class="save-confirmed hidden">
+      <h1>Added!</h1>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
